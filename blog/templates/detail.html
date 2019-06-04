@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<html>
+<body>
+       
+
+<div class="container">
+<br>
+<h1>자세한 본문 내용</h1>
+<br>
+<br>
+<h1>제목 : {{content.title}}</h1>
+<p>작성 날 : {{content.pub_date}}</p>
+<p>본문 : {{content.body}}</p>
+
+</div>
+
+</body>
+</html>
+{% endblock %}
+<!-- endblock으로 이 부분까지 컨텐츠다라고 알려주는 것-->
