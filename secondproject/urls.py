@@ -13,5 +13,6 @@ urlpatterns = [
     path('', blog.views.home, name="home"),
     path('blog/', include('blog.urls')), #blog 폴더에 있는 urls를 include해오고, 그 url형식은 blog/ 일 것이다
     path('portfolio/', portfolio.views.portfolio, name="portfolio"),
+    path('accounts/', include('accounts.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 #blog.views.create : blog 앱 폴더 안의 views.py 파일 안의 create함수를 실행 시킬 거야 !

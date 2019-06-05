@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<div class="container">
+    <h1>Sign Up</h1>
+
+    <form method="POST" action="{% url 'signup' %}">
+        {% csrf_token %} <!--보안 위해 쓰는 대표적인 것-->
+        Username
+        <br>
+        <input type="text" name="username">
+        <br>
+        Password
+        <br>
+        <input name="password1" type="password">
+        <br>
+        Confirm Password
+        <br>
+        <input name="password2" type="password">
+        <br>
+        <br>
+        <input type="submit" class="btn btn-primary" value="Sign Up">
+
+    </form>
+</div>
+
+{% endblock %}
