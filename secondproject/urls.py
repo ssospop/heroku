@@ -15,4 +15,5 @@ urlpatterns = [
     path('portfolio/', portfolio.views.portfolio, name="portfolio"),
     path('accounts/', include('accounts.urls')),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
-#blog.views.create : blog 앱 폴더 안의 views.py 파일 안의 create함수를 실행 시킬 거야 !
+#blog.views.create : blog 앱 폴더
+#  안의 views.py 파일 안의 create함수를 실행 시킬 거야 !
